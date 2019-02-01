@@ -1,0 +1,3 @@
+hue ::Integer -> [Integer]
+hue 0 = []
+hue k= [k `mod` 256 ] ++( hue (k `div` 256))
